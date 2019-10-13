@@ -12,7 +12,7 @@
 
 <strong>Prerequisites</strong>
 
-<p>This method requires self-hosted WordPress <a href="#">(download)</a> to be installed and using Contact Form 7 <a href="#">(Download)</a>. JQuery is required for this to work. Knowledge of template management required.</p>
+<p>This method requires self-hosted WordPress <a href="https://wordpress.org" target="_blank">(download)</a> to be installed and using Contact Form 7 <a href="https://en-au.wordpress.org/plugins/contact-form-7/" target="_blank">(Download)</a>. JQuery is required for this to work. Knowledge of template management required.</p>
 
 <strong>Method</strong>
 <strong>Step 1</strong>
@@ -58,4 +58,20 @@
 
 <strong>Step 4</strong>
 
-<p>When the contact page is loaded up, you should now see your dynamic field being loaded. However, the field is not yet being output by Contact Form 7. We need to add our field to the Contact Form 7 Mail output for it to display within sent mail. Luckily, this is very easy. Simply open your form within Contact Form 7 and go to the Mail tab. Within your Messsage Body add the name of your field, inside square brackets. E.g. [dynamic-field].<br><i>Note: Usually, Contact Form 7 will display all the available fields just above the To section. Dynamic fields added with JQuery do not display here, since they are not created within Contact Form 7.</i></p>
+<p>When the contact page is loaded up, you should now see your dynamic field being loaded. However, the field is not yet being output by Contact Form 7. We need to add our field to the Contact Form 7 Mail output for it to display within sent mail. Luckily, this is very easy. Simply open your form within Contact Form 7 and go to the Mail tab. Within your Messsage Body add the name of your field, inside square brackets. E.g. [dynamic-field].</p>
+
+```
+From: [full-name] <[email]>
+Subject: [subject]
+
+Message Body:
+[your-message]
+
+[dynamic-field]
+```
+
+<p><i>Note: Usually, Contact Form 7 will display all the available fields just above the To section. Dynamic fields added with JQuery do not display here, since they are not created within Contact Form 7.</i></p>
+
+<strong>Step 5</strong>
+
+<p>Send an email! Your field should display in your inbox when mail is received. Try experimenting by adding more fields or wrapping the script within an if statement.</p>
