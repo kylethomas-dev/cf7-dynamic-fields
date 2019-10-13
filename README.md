@@ -46,7 +46,7 @@
 
 <strong>Step 3</strong>
 
-<p>Now the magic begins. We will be using JQuery to prepend our dynamic fields into our empty div we setup in Step 1. The prepend method allows us to add content at the beginning of our 'dynamic-fields' div <a href="https://www.w3schools.com/jquery/html_prepend.asp">(more information)</a>. Simply copy the code below, modify it according to your needs and insert it a tthe bottom of your page, beneath your <?php get_footer(); ?>. The field is added as the page is loaded. We can even wrap this code within an if statement for dynamic loading.</p>
+<p>Now the magic begins. We will be using JQuery to prepend our dynamic fields into our empty div we setup in Step 1. The prepend method allows us to add content at the beginning of our 'dynamic-fields' div <a href="https://www.w3schools.com/jquery/html_prepend.asp">(more information)</a>. Simply copy the code below, modify it according to your needs and insert it a the bottom of your page, beneath your <?php get_footer(); ?>. The field is added as the page is loaded. We can even wrap this code within an if statement for dynamic loading.</p>
 
 ```
 <script>
